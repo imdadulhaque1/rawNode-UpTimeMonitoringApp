@@ -13,18 +13,22 @@ const http = require('http');
 const app= {}
 
 //TODO: Configur the app
-app.config = {}
+app.config = {
+    port: 3000
+}
 
 //TODO:==> define the Server to Run
-ap.createServer = () =>{
-    const server = http.createServer();
+app.createServer = () =>{
+    const server = http.createServer(app.handleReqRes);
     server.listen(app.config.port, () =>{
-        console.log(`Listening PORT @${app.config.port}`);
+        console.log(`Listening PORT ${app.config.port}`);
     })
 } 
 
 //TODO:==> Handle the Request Response
-app.handleRequest = (req, res) =>{
+app.handleReqRes = (req, res) =>{
     //?==> Handle the Response
     res.end("Hello SuperStar!");
 }
+
+app.createServer();
