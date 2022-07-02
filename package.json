@@ -1,0 +1,17 @@
+{
+  "name": "nodeauthenticationapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "JavaScript",
+    "NodeJS",
+    "Authentication",
+    "Authorization"
+  ],
+  "author": "Imdadul Haque <imdadul15-1440@diu.edu.bd>",
+  "license": "ISC"
+}
